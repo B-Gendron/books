@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+}
+
+thead {
+    background-color: #aad4f5;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9f2f9;
+}
+
+th {
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+    color: #555;
+}
+
+.status-termine {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-en-cours {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-a-lire {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#filters {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#filters label {
+    margin-right: 10px;
+}
+
+#filters input, #filters select {
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+

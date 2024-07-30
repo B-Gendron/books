@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de lectures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liste de lectures</h1>
+    
+    <!-- Filter section -->
+    <div id="filters">
+        <label for="genre-filter">Genre :</label>
+        <select id="genre-filter">
+            <option value="">Tous</option>
+            <option value="Article">Article</option>
+            <option value="Bande dessinée">Bande dessinée</option>
+            <option value="Essai">Essai</option>
+            <option value="Magazine">Magazine</option>
+            <option value="Roman">Roman</option>
+        </select>
+
+        <label for="auteur-filter">Auteur :</label>
+        <input type="text" id="auteur-filter" placeholder="Rechercher un auteur">
+
+        <label for="titre-filter">Titre :</label>
+        <input type="text" id="titre-filter" placeholder="Rechercher un titre">
+
+        <label for="statut-filter">Statut :</label>
+        <select id="statut-filter">
+            <option value="">Tous</option>
+            <option value="Terminé">Terminé</option>
+            <option value="En cours">En cours</option>
+            <option value="À lire">À lire</option>
+        </select>
+    </div>
+
+    <table id="books-table">
+        <thead>
+            <tr>
+                <th>Genre</th>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Statut</th>
+                <th>Note</th>
+                <th>Début</th>
+                <th>Fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Book entries will go here -->
+        </tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
